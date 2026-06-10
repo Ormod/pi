@@ -8,7 +8,7 @@ on:
 
 jobs:
   check-contributor:
-    runs-on: avrea-ubuntu-latest
+    runs-on: avrea-ubuntu-latest-4-vcpu
     permissions:
       contents: read
       issues: write

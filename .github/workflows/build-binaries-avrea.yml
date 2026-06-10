@@ -19,7 +19,7 @@ permissions: {}
 
 jobs:
   build:
-    runs-on: avrea-ubuntu-latest
+    runs-on: avrea-ubuntu-latest-4-vcpu
     permissions:
       contents: write
     env:
@@ -84,7 +84,7 @@ jobs:
           fi
 
   publish-npm:
-    runs-on: avrea-ubuntu-latest
+    runs-on: avrea-ubuntu-latest-4-vcpu
     needs: build
     environment: npm-publish
     permissions:
